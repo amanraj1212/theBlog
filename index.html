@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Net Web Bank</title>
+  </head>
+  <body>
+    <nav class="navbar background h-nav-resp" id="navBg"> <!--navBg=id added by me and "background" just after navbar in class is removed-->
+      <ul class="nav-list v-class-resp">
+        <div class="logo"><img src="img/bank.jpg" alt="logo here" /></div>
+        <!-- background.jpg will take size a/q to its own width -->
+        <li><a href="#">Home</a></li>
+        <li><a href="#PersonalBanking">Personal Banking</a></li>
+        <li><a href="https://www.startupindia.gov.in/content/sih/en/about_us/faqs.html">FAQs</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <div class="rightNav v-class">
+      <!--   <input type="text" name="search" id="search" placeholder="Search here" /> -->
+        <!--it can be connected to backEnd -->
+       <!--   <button class="btn btn-sm">Search</button> -->
+      </div>
+      <div class="burger">
+        <div class="line"></div> <!--3 lines in our Hamburger-->
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+    <section class="background firstsection" >
+      <div class="box-main">
+        <div class="firstHalf">
+          <p class="text-big">The future of banking is here</p>
+          <p class="text-small">
+            The future of banking is already here. Digital transformation is
+            changing the way we bank, making it faster, more convenient, and
+            secure. With innovative technologies like AI, blockchain, and
+            biometrics, banking is becoming more personalized, efficient, and
+            customer-centric. Join the future of banking and experience the
+            difference.
+          </p>
+          <div class="buttons">
+            <button class="btn">Invest</button>
+            <button class="btn">Returns</button>
+          </div>
+        </div>
+        <div class="secondHalf">
+          <img src="img/bank.jpg" alt="bank here" />
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="paras">
+        <p class="sectionTag text-big">The end of your search is here</p>
+        <p class="sectionSubTag text-small" id="PersonalBanking">
+          Are you tired of constantly searching for a reliable and trustworthy
+          bank? Look no further, because the end of your search is here! We
+          understand how important it is to have a bank that meets your needs
+          and provides you with the services you require. At our bank, we
+          prioritize customer satisfaction and are committed to providing you
+          with top-notch services that will exceed your expectations.
+        </p>
+      </div>
+      <div class="thumbnail">
+        <img src="https://source.unsplash.com/420x280/?finance" alt="bank here" class="imgFluid" />
+      </div>
+    </section>
+    <section class="section section-left" >
+      <div class="paras">
+        <p class="sectionTag text-big">The end of your search is here</p>
+        <p class="sectionSubTag text-small">
+          Our bank offers a wide range of financial services that cater to all
+          your banking needs. Whether you're looking for a basic checking
+          account or a high-yield savings account, we've got you covered. Our
+          online banking platform is user-friendly and convenient, allowing you
+          to access your accounts, transfer funds, and pay bills from anywhere
+          in the world. We also offer competitive interest rates and low fees to
+          ensure that you get the most out of your money.
+        </p>
+      </div>
+      <div class="thumbnail">
+        <img src="https://source.unsplash.com/420x280/?bank" alt="bank here" class="imgFluid" />  <!--bank,animatedbank  --you can alter this as per you convenience -->
+      </div>
+    </section>
+    <section class="section">
+      <div class="paras">
+        <p class="sectionTag text-big">The end of your search is here</p>
+        <p class="sectionSubTag text-small">
+          At our bank, we value our customers and are committed to providing
+          them with exceptional service. Our experienced and knowledgeable staff
+          is always available to answer your questions and provide you with the
+          guidance you need to make informed financial decisions. We also
+          prioritize security and use the latest technology to ensure that your
+          personal and financial information is safe and secure. So why wait?
+          Join us today and experience the peace of mind that comes with banking
+          with a reliable and trustworthy institution.
+        </p>
+      </div>
+      <div class="thumbnail">
+        <img src="https://source.unsplash.com/420x280/?graph" alt="bank here" class="imgFluid" />
+      </div>
+    </section>
+    <section class="contact" id="contact">
+        <h1 class="text-center">Contact Us</h1>
+        <div class="form">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter your name">
+            <input class="form-input" type="phone" name="phone" id="phone" placeholder="Enter your phone number">
+            <input class="form-input" type="email" name="email" id="email" placeholder="Enter your email-id">
+           <!--     <textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Ellaborate your concerns" style="width: 944px; height: 31px;"></textarea> <!--Ellaborate your concers css change here-->
+            <button class="btn">Submit</button>
+        </div>
+    </section>
+    <footer class="background">
+        <p class="text-footer"> 
+        Copyright &copy; NetWebBank.com @All rights reserved 2023
+    </p>
+    </footer>
+     <script>
+      burger = document.querySelector('.burger')
+      navbar = document.querySelector('.navbar')
+      rightNav = document.querySelector('.rightNav')
+      navList = document.querySelector('.nav-list')
+      burger.addEventListener('click',()=>{
+      rightNav.classList.toggle('v-class-resp');
+      navList.classList.toggle('v-class-resp');
+      navbar.classList.toggle('h-nav-resp');
+})
+     </script>
+  </body>
+</html>
